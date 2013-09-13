@@ -1,4 +1,4 @@
-Mailchimp_wrapper_ruby
-======================
+Rubychimp
+=========
 
 A wrapper around mailchimp API
