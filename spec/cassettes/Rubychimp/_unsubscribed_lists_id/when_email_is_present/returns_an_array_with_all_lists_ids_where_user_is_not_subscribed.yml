@@ -1,0 +1,95 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://us7.api.mailchimp.com/1.3/?method=lists
+    body:
+      encoding: UTF-8
+      string: ! '%7B%22apikey%22%3A%2282d3dcabb0cd77925b861ae1e47c73d5-us7%22%7D'
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 17 Sep 2013 23:36:29 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1881'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Set-Cookie:
+      - _AVESTA_ENVIRONMENT=prod; path=/
+    body:
+      encoding: US-ASCII
+      string: ! '{"total":2,"data":[{"id":"f694dc6d73","web_id":204793,"name":"test
+        2 hashdog","date_created":"2013-09-14 00:09:51","email_type_option":false,"use_awesomebar":true,"default_from_name":"test
+        2","default_from_email":"noreply@hashdog.com","default_subject":"","default_language":"en","list_rating":0,"subscribe_url_short":"http:\/\/eepurl.com\/Ff-IX","subscribe_url_long":"http:\/\/hashdog.us7.list-manage2.com\/subscribe?u=d57acdfa47ec3baf669c49e6a&id=f694dc6d73","beamer_address":"ZDU3YWNkZmE0N2VjM2JhZjY2OWM0OWU2YS0wMmQzMjJmOS04MjQwLTQyYjYtYTQ2Mi1iNTJlMDMzYjhkZGI@campaigns.mailchimp.com","visibility":"pub","stats":{"member_count":0,"unsubscribe_count":0,"cleaned_count":0,"member_count_since_send":0,"unsubscribe_count_since_send":0,"cleaned_count_since_send":0,"campaign_count":0,"grouping_count":0,"group_count":0,"merge_var_count":2,"avg_sub_rate":null,"avg_unsub_rate":null,"target_sub_rate":null,"open_rate":null,"click_rate":null},"modules":[]},{"id":"d852f12b22","web_id":204777,"name":"test
+        hashdog","date_created":"2013-09-13 23:42:48","email_type_option":false,"use_awesomebar":true,"default_from_name":"test","default_from_email":"noreply@hashdog.com","default_subject":"","default_language":"en","list_rating":0,"subscribe_url_short":"http:\/\/eepurl.com\/Ff8xv","subscribe_url_long":"http:\/\/hashdog.us7.list-manage.com\/subscribe?u=d57acdfa47ec3baf669c49e6a&id=d852f12b22","beamer_address":"ZDU3YWNkZmE0N2VjM2JhZjY2OWM0OWU2YS0zNzRjZWY5OS04YTVhLTQyMWMtOTkwOS1kNzc0NDc4ZTFmNmE@campaigns.mailchimp.com","visibility":"pub","stats":{"member_count":1,"unsubscribe_count":1,"cleaned_count":0,"member_count_since_send":8,"unsubscribe_count_since_send":5,"cleaned_count_since_send":0,"campaign_count":0,"grouping_count":0,"group_count":0,"merge_var_count":2,"avg_sub_rate":null,"avg_unsub_rate":null,"target_sub_rate":null,"open_rate":null,"click_rate":null},"modules":[]}]}'
+    http_version:
+  recorded_at: Tue, 17 Sep 2013 23:36:29 GMT
+- request:
+    method: post
+    uri: https://us7.api.mailchimp.com/1.3/?method=listsForEmail
+    body:
+      encoding: UTF-8
+      string: ! '%7B%22apikey%22%3A%2282d3dcabb0cd77925b861ae1e47c73d5-us7%22%2C%22email_address%22%3A%22info%40hashdog.com%22%7D'
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 17 Sep 2013 23:36:31 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '14'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - _AVESTA_ENVIRONMENT=prod; path=/
+    body:
+      encoding: US-ASCII
+      string: ! '["d852f12b22"]'
+    http_version:
+  recorded_at: Tue, 17 Sep 2013 23:36:31 GMT
+- request:
+    method: post
+    uri: https://us7.api.mailchimp.com/1.3/?method=listsForEmail
+    body:
+      encoding: UTF-8
+      string: ! '%7B%22apikey%22%3A%2282d3dcabb0cd77925b861ae1e47c73d5-us7%22%2C%22email_address%22%3A%22info%40hashdog.com%22%7D'
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 17 Sep 2013 23:36:33 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '14'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - _AVESTA_ENVIRONMENT=prod; path=/
+    body:
+      encoding: US-ASCII
+      string: ! '["d852f12b22"]'
+    http_version:
+  recorded_at: Tue, 17 Sep 2013 23:36:33 GMT
+recorded_with: VCR 2.5.0
